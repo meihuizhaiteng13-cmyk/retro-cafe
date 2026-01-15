@@ -1,0 +1,130 @@
+/* 共通 */
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN","Yu Mincho",serif;
+  background: #faf7f3;
+  color: #333;
+  line-height: 1.8;
+}
+
+section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+/* ヘッダー */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+
+.since {
+  margin: 10px 0;
+}
+
+/* オーナー */
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.owner img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.owner-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* メニュー */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.menu-grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.menu-grid p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.note {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 店舗情報 */
+.access {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.access img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 60px 0 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .owner,
+  .access {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
